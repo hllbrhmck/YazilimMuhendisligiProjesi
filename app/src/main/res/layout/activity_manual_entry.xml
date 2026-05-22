@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manuel Veri Girişi"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#263238"
+            android:textAlignment="center"
+            android:layout_marginBottom="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manuel İlaç Ekle"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#004D40"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/edtIlacAdi"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="İlaç adı örn: APRANAX"
+                android:inputType="text"
+                android:padding="10dp"
+                android:background="#EEF2F3" />
+
+            <EditText
+                android:id="@+id/edtEtkenMadde"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:hint="Etken madde örn: Naproksen"
+                android:inputType="text"
+                android:padding="10dp"
+                android:background="#EEF2F3" />
+
+            <EditText
+                android:id="@+id/edtDozaj"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:hint="Dozaj örn: 550mg"
+                android:inputType="text"
+                android:padding="10dp"
+                android:background="#EEF2F3" />
+
+            <Button
+                android:id="@+id/btnManuelIlacEkle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#004D40"
+                android:textColor="#FFFFFF"
+                android:text="Aktif İlaç Listesine Ekle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ICD-10 Hastalık Bilgisi"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1565C0"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hastalık adı manuel girilmez. Sadece ICD-10 kodu girilir; sistem hastalık grubunu otomatik çözümler."
+                android:textSize="13sp"
+                android:textColor="#455A64"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edtIcd10"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="ICD-10 kodu örn: K25, I10, N18"
+                android:inputType="textCapCharacters"
+                android:padding="10dp"
+                android:background="#EEF2F3" />
+
+            <TextView
+                android:id="@+id/txtIcdCozum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Çözümlenen Hastalık: ICD-10 kodu bekleniyor."
+                android:textStyle="bold"
+                android:textColor="#263238"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/btnHastalikEkle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"
+                android:text="ICD-10 Hastalık Bilgisini Kaydet" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtManuelBilgi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Son işlem bekleniyor..."
+            android:textStyle="bold"
+            android:textColor="#37474F"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="#E3F2FD" />
+
+    </LinearLayout>
+</ScrollView>
